@@ -1,0 +1,34 @@
+//s0002159/exchange/Sovetsk_Converting/12.Small group\Клей
+//s0002159/exchange/Sovetsk_Converting/5.Maintenance\Electric Tol2\STANDARTS
+//s0002159/exchange/Sovetsk_Converting/5.Maintenance\Electrics
+//s0002159/exchange/Sovetsk_Converting/5.Maintenance\Electrics\!!! ANALYSES_OPL !!!
+//s0002159/exchange/Sovetsk_Converting/5.Maintenance\Electrics\BU1_Start\4. Manuals\4.1 Equipment\4.1.9 Printers\Arca Sato
+//s0002159/exchange/Sovetsk_Converting/5.Maintenance\Electrics\Каталог_ошибок\STANDARTS
+//s0002159/exchange/Sovetsk_Converting/5.Maintenance\Mechanics\Смирнов стажер 2019
+//s0002159/exchange/Sovetsk_Converting/7.Process engineer\Key9 Гильзоклейка\Line1
+//s0002159/exchange/Sovetsk_Converting/7.Process engineer\Key9 Гильзоклейка\Line2
+//s0002159/exchange/Sovetsk_Converting/7.Process engineer\Воробкалов\CIL
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\2. Standards Line 1\1. Simplex
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\2. Standards Line 1\2. Core winder
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\2. Standards Line 1\3. Log saw
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\2. Standards Line 1\4. Касматик
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\2. Standards Line 1\5. Bundler
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\2. Standards Line 1\6. Waste press
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\3. Standards Line 2\1. Simplex
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\3. Standards Line 2\2. Core winder
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\3. Standards Line 2\3. Log saw
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\3. Standards Line 2\4. Casmatic 2.1
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\3. Standards Line 2\5. Casmatic 2.2
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\3. Standards Line 2\6. Bundler
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\4. Standards\3. Standards Line 2\7. Press
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\2. Standards Line 1\1. Simplex
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\2. Standards Line 1\2. Core winder
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\2. Standards Line 1\3. Log saw
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\2. Standards Line 1\4. Касматик
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\2. Standards Line 1\5. Bundler
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\3. Standards Line 2\1. Simplex
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\3. Standards Line 2\2. Core winder
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\3. Standards Line 2\3. Log saw
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\3. Standards Line 2\4. Casmatic 2.1
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\3. Standards Line 2\5. Casmatic 2.2
+//s0002159/exchange/Sovetsk_Converting/Shift leaders\Для экзаменов на повышение разряда\Оператор линии. Старший оператор\Материал для подготовки\OPL, CIL\3. Standards Line 2\6. Bundler

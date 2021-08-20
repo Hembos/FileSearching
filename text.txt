@@ -1,0 +1,1411 @@
+
+
+<!doctype html>
+<html lang="ru">
+  <head>    
+    <meta charset="utf-8">
+    <title>python - Получить файл с локального URL с запросами Python? - Question-It.com</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Я использую библиотеку запросов Python в одном из методов моего приложения. Тело метода выглядит так:
+def handle_remote_file(url, **kwargs):
+    response = requests.get(url, ...)
+    buff = StringIO.StringIO()
+    buff.write(response.content)
+    ...
+    return True
+
+Я хотел бы написать несколько мо....">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/static/img/favicon_256.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/static/img/favicon_128.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon_32.png">
+
+    
+    
+  <link href="https://question-it.com/questions/1421007/poluchit-fajl-s-lokalnogo-url-s-zaprosami-python" rel="canonical">
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Question",
+        "name": "Получить файл с локального URL с запросами Python?",
+        "text": "Я использую библиотеку запросов Python в одном из методов моего приложения. Тело метода выглядит так:
+def handle_remote_file(url, **kwargs):
+    response = requests.get(url, ...)
+    buff = StringIO.StringIO()
+    buff.write(response.content)
+    ...
+    return True
+
+Я хотел бы написать несколько мо....",
+        "author": {
+            "@type": "Person",
+            "name": "ozgur"
+        },
+        "answerCount": ""
+    }
+  </script>
+
+
+    
+      <script data-ad-client="ca-pub-6208177446512190" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <meta name="verify-admitad" content="f90b3646c5" />
+
+    
+
+    <script>
+      window.mobileCheck = function() {
+        let check = false;
+        (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+        return check;
+      };
+    </script>
+
+  </head>
+
+  <body>
+    <style>
+      html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}sub,sup{font-size:80%;line-height:1;vertical-align:sub}sup{vertical-align:super}button{margin:0}
+
+      html {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        color: #2c3e50;
+      }
+
+      body {
+        line-height: 1.2;
+      }
+
+      .main-container {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .wrapper {
+        padding: 10px;
+      }
+      .horizontal-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .mainbar {
+        width: calc(100% - 300px - 30px);
+      }
+      .sidebar {
+        margin-left: 24px;
+        width: 300px;
+      }
+
+      @media only screen and (max-width: 450px) {
+        .mainbar, .sidebar {width: 100%;}
+        .main-content {
+          display: flex;
+          flex-direction: column;
+        }
+        .sidebar {
+          margin-left: 0px;
+          margin-top: 30px;
+          /*width: 300px;*/
+        }
+      }
+
+      /* header */
+      .horizontal-block {
+        width: 100%;
+        background: #2c3e50;
+        /*height: 50px;*/
+      }
+
+      .site-name {
+        line-height: 40px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      @media only screen and (max-width: 450px) {
+        .site-name {
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+
+      .site-name a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .lang-icons {
+        padding-top: 10px;
+      }
+
+      .lang-icons a:first-child {
+        margin-left: 0px;
+      }
+
+      .lang-icons a {
+        display: inline-block;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+
+      .lang-icons a > img{
+        height: 30px;
+        cursor: pointer;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        font-weight: 400;
+        color: #2c3e50;
+      }
+      h1 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 25px; 
+        font-size: 26px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #ecf0f1;
+      }
+      @media only screen and (max-width: 450px) {
+        h1 {
+          font-size: 20px;
+        }
+      }
+
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 22px; 
+        font-size: 22px;
+        border-bottom: 1px solid #ecf0f1;
+        padding-bottom: 10px;
+      }
+
+      .sidebar h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        border-bottom: none;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+      }
+      .sidebar h2:first-child {
+        margin-top: 0px;
+      }
+
+      .sidebar .links-list .item {
+        line-height: 18px;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .sidebar .links-list a {
+        font-size: 14px;
+        /*display: inline-block;*/
+        text-decoration: none;
+        
+      }
+
+      .sidebar .title-comments {
+        border-radius: 2px;
+        display: inline-block;
+        width: 25px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 13px;
+        padding: 2px; 
+        background-color: #5fba7d;
+        /*padding-left: 4px; */
+        margin-right: 2px;
+      }
+      .sidebar .title-comments.no-answers {
+        background-color: rgb(239, 240, 241);
+        color: rgb(60, 65, 70);
+      }
+
+      .sidebar .icon-comments {
+        width: 20px;
+        background-size: 12px;
+        top: 0px;
+        height: 10px;
+        /*top: 4px;*/
+      }
+
+      .links-list .link-more {
+        display: block;
+        text-align: right;
+      }
+
+      .sidebar .links-list a:hover {
+        text-decoration: underline;
+      }
+      
+      p {
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+
+      pre {
+        margin-bottom: 1em;
+        padding: 12px 8px;
+        width: auto;
+        max-height: 600px;
+        overflow: auto;
+        font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+        font-size: 13px;
+        background-color: #eff0f1;
+        border-radius: 3px;
+      }
+
+      code {
+        /*white-space: pre-wrap;*/
+        padding: 1px 5px;
+        font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+        background-color: #eff0f1;
+      }
+
+      pre code {
+        padding: 0;
+      }
+
+      .question {
+        margin-bottom: 40px;
+      }
+
+      .answer {
+        padding: 10px;
+        border-left: 3px solid rgb(239, 240, 241);
+        padding-left: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+        background-color: #fdfdfd;
+        box-shadow: 0 3px 3px 0 #eee;
+      }
+
+      .best-answer {
+        color: #fff;
+        border-radius: 2px 2px 0 0;
+        display: inline-block;
+        text-align: center;
+        font-size: 15px;
+        padding: 4px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #5fba7d;
+      }
+
+      .answer.best {
+        border-left: 3px solid #5fba7d;;
+        background-color: rgba(95, 186, 125, 0.02);
+      }
+      
+      blockquote {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #FFF8DC;
+        border-left: 2px solid #ffeb8e;
+      }
+      blockquote p:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #07C; 
+        transition: all 0.2s ease-in-out; 
+        -webkit-transition: all 0.2s ease-in-out;
+      }
+      a:hover, a:focus {
+        text-decoration: underline;
+        /*color:#e74c3c;*/
+      }
+
+      a.tag {
+        display: inline-block;
+        /*background: #B54B3C;*/
+        background: #f1f8ff;
+        padding: 5px;
+        /*color: #fff;*/
+        /*color: #337ab7;*/
+        border-radius: 3px;
+        text-decoration: none;
+        margin-right: 5px;
+        margin-bottom: 10px;
+      }
+      a.tag:hover {
+        text-decoration: none;
+        /*color: #fff;*/
+        background-color: #D3E7FD;
+      }
+
+      .sidebar .tags {
+        overflow: visible;
+        white-space: inherit;
+      }
+      .tags {
+        overflow: scroll;
+        white-space: nowrap;
+      }
+
+      .question_list .question {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ecf0f1;
+      }
+      .question .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .question .text, .question p {
+        font-size: 15px;
+        margin-bottom: 10px; 
+        overflow-wrap: break-word;
+        line-height: 20px;
+      }
+      .question .title a {
+        text-decoration: none;
+      }
+
+      .question .title a:hover {
+        text-decoration: underline; 
+      }
+
+      .title-comments {
+        display: inline-block;
+        color: #fff;
+        background-color: #5fba7d;
+        /*background-color: #27ae60;*/
+        padding: 2px; 
+        padding-left: 7px;
+        margin-right: 5px;
+        border-radius: 3px;
+      }
+
+      .icon-comments {
+        display: inline-block;
+        width: 30px;
+        position: relative;
+        top: 2px;
+        height: 16px;
+        background: url('/static/svg/icon-comments2.svg');
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: center center;
+      }
+
+      .question img {
+        max-width: 100%;
+      }
+
+      .breadcrumbs {
+        margin-bottom: 20px;
+      }
+      .breadcrumbs a {
+        text-decoration: none;
+      }
+      .breadcrumbs .nav-item {
+        display: inline-block;
+        margin-right: 5px;
+      }
+      .breadcrumbs .nav-item:after {
+        content: '>';
+        color: #777;
+        padding-left: 5px;
+      }
+      .breadcrumbs .nav-item:last-child:after {
+        content: '';
+      }
+      /*.breadcrumbs .nav-item:before {
+        content: '>';
+        color: #777;
+        padding-left: 5px;
+      }*/
+      .breadcrumbs .active {
+        color: #777;
+      }
+      .breadcrumbs .active.nav-item:after {
+        content: '';
+      }
+
+
+       .question .info {
+      width: 100%;
+      text-align: right;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .question .votes,
+    .question .answers { 
+      white-space: nowrap;
+      text-align: left;
+      color: #5fba7d;
+      line-height: 25px;
+      font-weight: bold;
+    }
+    .question .votes span,
+    .question .answers span {
+      display: inline-block;
+    }
+    .question .votes .value {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .question .votes .arrow {
+      vertical-align: text-bottom;
+      width: 20px;
+      height: 20px;
+      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIGhlaWdodD0iNjRweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMSI+PGc+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzc3QjNENCIgcj0iMzIiLz48L2c+PGcgb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNNDkuNTI5LDMzLjg1NUwzNS4yNTksMTUuNzFjLTEuNzkzLTIuMjgtNC43MjYtMi4yOC02LjUxOSwwTDE0LjQ3MSwzMy44NTUgICAgQzEyLjY3OSwzNi4xMzUsMTMuNDM5LDM4LDE2LjE2MSwzOEgyNHYxMmMwLDIuMjA5LDEuNzkxLDQsNCw0aDhjMi4yMDksMCw0LTEuNzkxLDQtNFYzOGg3LjgzOSAgICBDNTAuNTYxLDM4LDUxLjMyMSwzNi4xMzUsNDkuNTI5LDMzLjg1NXoiIGZpbGw9IiMyMzFGMjAiLz48L2c+PGc+PHBhdGggZD0iTTQwLDQ4YzAsMi4yMDktMS43OTEsNC00LDRoLThjLTIuMjA5LDAtNC0xLjc5MS00LTRWMjRjMC0yLjIwOSwxLjc5MS00LDQtNGg4YzIuMjA5LDAsNCwxLjc5MSw0LDRWNDh6IiBmaWxsPSIjRkZGRkZGIi8+PC9nPjxnPjxwYXRoIGQ9Ik0xNi4xNjEsMzZjLTIuNzIyLDAtMy40ODMtMS44NjUtMS42OS00LjE0NUwyOC43NDEsMTMuNzFjMS43OTMtMi4yOCw0LjcyNi0yLjI4LDYuNTE5LDBsMTQuMjY5LDE4LjE0NiAgICBjMS43OTMsMi4yOCwxLjAzMiw0LjE0NS0xLjY5LDQuMTQ1SDE2LjE2MXoiIGZpbGw9IiNGRkZGRkYiLz48L2c+PC9nPjxnIGlkPSJMYXllcl8yIi8+PC9zdmc+');
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: bottom 0px left 0px;
+      cursor: pointer;
+    }
+    .arrow-down {
+      transform: rotate(180deg);
+    }
+    .question .misc {
+      margin-left: 10px;
+      line-height: 25px;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+    /*.question_list .question .misc {
+      overflow: visible;
+    }*/
+    .question.single .misc {
+      overflow: hidden;
+    }
+    .question .misc .time {
+      color: #aaa;
+      padding-left: 5px;
+    }
+    .question .misc .author {
+      color: #07C;
+    }
+
+    .question .answers {
+      /*padding-left: 5px;*/
+    }
+    .question .answers .answer-icon {
+      margin-right: 5px;
+      vertical-align: text-bottom;
+      width: 20px;
+      height: 20px;
+      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIGhlaWdodD0iNjRweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMSI+PGc+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzc2QzJBRiIgcj0iMzIiLz48L2c+PGcgb3BhY2l0eT0iMC4yIj48Zz48Zz48cGF0aCBkPSJNNDIuNDYxLDQ0Yy0wLjY3MSwwLTEuMzI2LTAuMzM4LTEuNzA1LTAuOTUxYy0wLjU4LTAuOTQtMC4yODctMi4xNzIsMC42NTMtMi43NTJsMTAuMTI0LTYuMjQyICAgICAgYzAuMDA1LTAuMDE4LDAuMDA3LTAuMDM2LDAuMDA3LTAuMDU2cy0wLjAwMi0wLjAzOC0wLjAwNy0wLjA1Nkw0MS40MSwyNy43MDNjLTAuOTQtMC41OC0xLjIzMi0xLjgxMi0wLjY1My0yLjc1MiAgICAgIGMwLjU4LTAuOTQsMS44MTItMS4yMzIsMi43NTItMC42NTNsMTAuNjMsNi41NTRsMC4xNjUsMC4xNjVjMC43OTcsMC43OTcsMS4yMzYsMS44NTYsMS4yMzYsMi45ODMgICAgICBjMCwxLjEyNi0wLjQzOSwyLjE4Ni0xLjIzNiwyLjk4M2wtMC4xNjYsMC4xNjZsLTEwLjYzLDYuNTU0QzQzLjE4Miw0My45MDQsNDIuODE5LDQ0LDQyLjQ2MSw0NHoiIGZpbGw9IiMyMzFGMjAiLz48L2c+PC9nPjxnPjxnPjxwYXRoIGQ9Ik0yMS41MzksNDRjLTAuMzU4LDAtMC43MjEtMC4wOTYtMS4wNDgtMC4yOThsLTEwLjYzLTYuNTU0bC0wLjE2Ni0wLjE2NiAgICAgIEM4Ljg5OCwzNi4xODYsOC40NTksMzUuMTI2LDguNDU5LDM0YzAtMS4xMjcsMC40MzktMi4xODcsMS4yMzYtMi45ODNsMC4xNjUtMC4xNjVsMTAuNjMtNi41NTQgICAgICBjMC45NDEtMC41OCwyLjE3Mi0wLjI4NywyLjc1MiwwLjY1M2MwLjU4LDAuOTQsMC4yODcsMi4xNzItMC42NTMsMi43NTJsLTEwLjEyNCw2LjI0MmMtMC4wMDUsMC4wMTgtMC4wMDcsMC4wMzYtMC4wMDcsMC4wNTYgICAgICBzMC4wMDIsMC4wMzgsMC4wMDcsMC4wNTZsMTAuMTI0LDYuMjQyYzAuOTQsMC41OCwxLjIzMiwxLjgxMiwwLjY1MywyLjc1MkMyMi44NjUsNDMuNjYzLDIyLjIwOSw0NCwyMS41MzksNDR6IiBmaWxsPSIjMjMxRjIwIi8+PC9nPjwvZz48L2c+PGcgb3BhY2l0eT0iMC4yIj48Zz48cGF0aCBkPSJNMjUuNSw1M2MtMC4yMzcsMC0wLjQ3OS0wLjA0Mi0wLjcxNC0wLjEzMmMtMS4wMzItMC4zOTUtMS41NDgtMS41NTEtMS4xNTQtMi41ODNsMTMtMzQgICAgIGMwLjM5NS0xLjAzMiwxLjU1MS0xLjU0OSwyLjU4My0xLjE1NGMxLjAzMiwwLjM5NSwxLjU0OCwxLjU1MSwxLjE1NCwyLjU4M2wtMTMsMzRDMjcuMDYzLDUyLjUxMSwyNi4zMDUsNTMsMjUuNSw1M3oiIGZpbGw9IiMyMzFGMjAiLz48L2c+PC9nPjxnPjxnPjxwYXRoIGQ9Ik00Mi40NjEsNDJjLTAuNjcxLDAtMS4zMjctMC4zMzctMS43MDUtMC45NWMtMC41OC0wLjk0LTAuMjg3LTIuMTczLDAuNjUzLTIuNzUybDEwLjEyMy02LjI0MSAgICAgYzAuMDEtMC4wMzcsMC4wMS0wLjA3NiwwLTAuMTEzTDQxLjQxLDI1LjcwMmMtMC45NC0wLjU3OS0xLjIzMy0xLjgxMi0wLjY1My0yLjc1MmMwLjU4LTAuOTQsMS44MTEtMS4yMzMsMi43NTItMC42NTIgICAgIGwxMC42MzEsNi41NTRsMC4xNjYsMC4xNjVjMS42NDQsMS42NDYsMS42NDQsNC4zMjEsMCw1Ljk2N2wtMC4xNjYsMC4xNjVsLTEwLjYzMSw2LjU1NEM0My4xODIsNDEuOTA0LDQyLjgxOSw0Miw0Mi40NjEsNDJ6IiBmaWxsPSIjRkZGRkZGIi8+PC9nPjxnPjxwYXRoIGQ9Ik0yMS41MzksNDJjLTAuMzU4LDAtMC43Mi0wLjA5Ni0xLjA0Ny0wLjI5OEw5Ljg2LDM1LjE0OGwtMC4xNjYtMC4xNjVjLTEuNjQ0LTEuNjQ2LTEuNjQ0LTQuMzIxLDAtNS45NjcgICAgIGwwLjE2Ni0wLjE2NWwxMC42MzEtNi41NTRjMC45MzktMC41ODEsMi4xNzMtMC4yODgsMi43NTIsMC42NTJjMC41OCwwLjk0LDAuMjg3LDIuMTczLTAuNjUzLDIuNzUybC0xMC4xMjMsNi4yNDEgICAgIGMtMC4wMSwwLjAzNy0wLjAxLDAuMDc2LDAsMC4xMTNsMTAuMTIzLDYuMjQxYzAuOTQsMC41NzksMS4yMzMsMS44MTIsMC42NTMsMi43NTJDMjIuODY1LDQxLjY2MywyMi4yMDksNDIsMjEuNTM5LDQyeiIgZmlsbD0iI0ZGRkZGRiIvPjwvZz48L2c+PGc+PHBhdGggZD0iTTI1LjUsNTEuMDAxYy0wLjIzNywwLTAuNDc5LTAuMDQzLTAuNzE0LTAuMTMzYy0xLjAzMi0wLjM5NS0xLjU0OC0xLjU1MS0xLjE1NC0yLjU4MmwxMy0zNCAgICBjMC4zOTUtMS4wMzEsMS41NTEtMS41NSwyLjU4My0xLjE1NGMxLjAzMiwwLjM5NSwxLjU0OCwxLjU1MSwxLjE1NCwyLjU4MmwtMTMsMzRDMjcuMDYzLDUwLjUxMSwyNi4zMDUsNTEuMDAxLDI1LjUsNTEuMDAxeiIgZmlsbD0iI0ZGRkZGRiIvPjwvZz48L2c+PGcgaWQ9IkxheWVyXzIiLz48L3N2Zz4=');
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: bottom 0px left 0px;
+      cursor: pointer;
+    }
+
+    .tag_description {
+      line-height: 20px;
+      font-size: 14px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .tag_description p:first-child {
+      margin-bottom: 5px;
+    }
+
+
+    .dobanner-container {
+      margin-top: 30px;
+      width: 100%;
+    }
+    .dobanner-wrapper {
+      background-color: #00b47b;
+      border: 1px solid #009969;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+      padding: 8px 10px;
+      text-align: center;
+    }
+    .dobanner {
+      text-decoration: none;
+      color: #fff;
+      
+    }
+    .menu .menu-item {
+      box-sizing: border-box;
+      text-decoration: none;
+      line-height: 37px;
+      color: #fff;
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+    .menu .menu-item:hover,
+    .menu .menu-item.active {
+      border-bottom: 3px solid #07C;
+    }
+    </style>
+
+    <div class="horizontal-block">
+      <div class="main-container">
+        <div class="horizontal-wrapper">
+          <div class="site-name">
+            <a href="/">Question-It.com</a>
+          </div>
+          <div class="menu">
+            
+              <a class="menu-item " href="/">Вопросы</a>
+              <a class="menu-item " href="/tags">Теги</a>
+            
+          </div>
+          <!-- <div class="lang-icons">
+            <a href="/"><img src="/static/img/icon_flag_russia.png" alt="На русском" title="На русском"></a>
+            <a href="/es"><img src="/static/img/icon_flag_spain.png" alt="En español" title="En español"></a>
+            <a href="/fr"><img src="/static/img/icon_flag_france.png" alt="En français" title="En français"></a>
+            <a href="/de"><img src="/static/img/icon_flag_germany.png" alt="Auf Deutsch" title="Auf Deutsch"></a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="wrapper">
+        
+          
+  <div class="breadcrumbs">
+
+    
+      <span class="nav-item"><a href="/">Новые вопросы</a></span>
+    
+
+    
+      
+        <span class="nav-item"><a href="/tags/python">python</a></span>
+      
+    
+
+  </div>
+
+        
+
+        <h1>Получить файл с локального URL с запросами Python?</h1>
+        <div class="singlebar">
+          
+        </div>
+        <div class="main-content">
+          <div class="mainbar">
+            
+  <div class="question single">
+    <p>Я использую <a href="http://docs.python-requests.org/en/latest/index.html" rel="nofollow noreferrer">библиотеку запросов</a> Python в одном из методов моего приложения. Тело метода выглядит так:</p>
+<pre><code>def handle_remote_file(url, **kwargs):
+    response = requests.get(url, ...)
+    buff = StringIO.StringIO()
+    buff.write(response.content)
+    ...
+    return True
+</code></pre>
+<p>Я хотел бы написать несколько модульных тестов для этого метода, однако я хочу передать поддельный локальный URL, такой как:</p>
+<pre><code>class RemoteTest(TestCase):
+    def setUp(self):
+        self.url = 'file:///tmp/dummy.txt'
+
+    def test_handle_remote_file(self):
+        self.assertTrue(handle_remote_file(self.url))
+</code></pre>
+<p>Когда я вызываю <strong> запросы.get </strong> с локальным URL-адресом, я получаю исключение <strong> KeyError </strong> ниже:</p>
+<pre><code>requests.get('file:///tmp/dummy.txt')
+
+/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/requests/packages/urllib3/poolmanager.pyc in connection_from_host(self, host, port, scheme)
+76 
+77         # Make a fresh ConnectionPool of the desired type
+78         pool_cls = pool_classes_by_scheme[scheme]
+79         pool = pool_cls(host, port, **self.connection_pool_kw)
+80 
+
+KeyError: 'file'
+</code></pre>
+<p>Вопрос в том, как я могу передать локальный URL-адрес в <strong> reports.get </strong>?</p>
+<p>PS: я составил приведенный выше пример. Возможно, содержит много ошибок.</p>
+
+    
+      <div class="tags">
+  
+    
+      <a href="/tags/python" class="tag">python</a>
+    
+  
+    
+      <a href="/tags/http" class="tag">http</a>
+    
+  
+    
+      <a href="/tags/python-requests" class="tag">python-requests</a>
+    
+  
+    
+      <a href="/tags/local-files" class="tag">local-files</a>
+    
+  
+</div>
+
+    
+
+    <div class="info">
+      <div class="votes">
+        <span class="arrow arrow-up"></span>
+        <span class="value">34</span>
+        <span class="arrow arrow-down"></span>
+      </div>
+      <div class="misc">
+        <span class="author">ozgur</span>
+        
+          <span class="time">12 Апр 2012 в 16:51</span>
+        
+      </div>
+    </div>
+  </div>
+
+  
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Yandex.RTB R-A-604623-4 -->
+    <div id="yandex_rtb_R-A-604623-4"></div>
+    <script type="text/javascript">
+      // setTimeout(function () {
+
+        (function(w, d, n, s, t) {
+            w[n] = w[n] || [];
+            w[n].push(function() {
+                Ya.Context.AdvManager.render({
+                    blockId: "R-A-604623-4",
+                    renderTo: "yandex_rtb_R-A-604623-4",
+                    async: true
+                });
+            });
+            t = d.getElementsByTagName("script")[0];
+            s = d.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//an.yandex.ru/system/context.js";
+            s.async = true;
+            t.parentNode.insertBefore(s, t);
+        })(this, this.document, "yandexContextAsyncCallbacks");
+
+      // }, 2100);
+    </script>
+  
+
+  
+    <h2>4 ответа</h2>
+
+    
+      
+        <div class="best-answer">Лучший ответ</div>
+        <div class="question answer best">
+      
+
+        <p>Как объяснил @WooParadog, библиотека запросов не знает, как обрабатывать локальные файлы. Хотя текущая версия позволяет определять <a href="http://docs.python-requests.org/en/latest/user/advanced/?highlight=mount#transport-adapters">транспортные адаптеры</a>.</p>
+<p>Поэтому вы можете просто определить свой собственный адаптер, который сможет обрабатывать локальные файлы, например:</p>
+<pre><code>from requests_testadapter import Resp
+
+class LocalFileAdapter(requests.adapters.HTTPAdapter):
+    def build_response_from_file(self, request):
+        file_path = request.url[7:]
+        with open(file_path, 'rb') as file:
+            buff = bytearray(os.path.getsize(file_path))
+            file.readinto(buff)
+            resp = Resp(buff)
+            r = self.build_response(request, resp)
+
+            return r
+
+    def send(self, request, stream=False, timeout=None,
+             verify=True, cert=None, proxies=None):
+
+        return self.build_response_from_file(request)
+
+requests_session = requests.session()
+requests_session.mount('file://', LocalFileAdapter())
+requests_session.get('file://&lt;some_local_path&gt;')
+</code></pre>
+<p>Я использую модуль <a href="https://github.com/ambv/requests-testadapter">reports-testadapter</a> в приведенном выше примере.</p>
+
+        <div class="info">
+          <div class="votes">
+            <span class="arrow arrow-up"></span>
+            <span class="value">28</span>
+            <span class="arrow arrow-down"></span>
+          </div>
+          <div class="misc">
+            <span class="author">Martijn Pieters</span>
+            <span class="time">23 Сен 2015 в 14:21</span>
+          </div>
+        </div>
+      </div>
+
+      
+    
+      
+        <div class="question answer">
+      
+
+        <p>В недавнем проекте у меня была такая же проблема. Поскольку запросы не поддерживают схему «файл», я исправлю наш код, чтобы загрузить содержимое локально. Сначала я определяю функцию для замены <code>requests.get</code>:</p>
+<pre><code>def local_get(self, url):
+    "Fetch a stream from local files."
+    p_url = six.moves.urllib.parse.urlparse(url)
+    if p_url.scheme != 'file':
+        raise ValueError("Expected file scheme")
+
+    filename = six.moves.urllib.request.url2pathname(p_url.path)
+    return open(filename, 'rb')
+</code></pre>
+<p>Затем, где-то в тестовой настройке или украшении тестовой функции, я использую <code>mock.patch</code> для исправления функции get по запросам:</p>
+<pre><code>@mock.patch('requests.get', local_get)
+def test_handle_remote_file(self):
+    ...
+</code></pre>
+<p>Этот метод несколько хрупок - он не помогает, если базовый код вызывает <code>requests.request</code> или создает <code>Session</code> и вызывает его. Может быть способ исправления запросов на более низком уровне для поддержки URL <code>file:</code>, но в моем первоначальном исследовании не было очевидной точки зацепки, поэтому я выбрал этот более простой подход.</p>
+
+        <div class="info">
+          <div class="votes">
+            <span class="arrow arrow-up"></span>
+            <span class="value">6</span>
+            <span class="arrow arrow-down"></span>
+          </div>
+          <div class="misc">
+            <span class="author">Jason R. Coombs</span>
+            <span class="time">3 Мар 2014 в 15:19</span>
+          </div>
+        </div>
+      </div>
+
+      
+        <!-- horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block;width:728px;height:90px;margin-left:auto;margin-right:auto;margin-bottom:40px;"
+             data-ad-client="ca-pub-6208177446512190"
+             data-ad-slot="8802370556"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      
+    
+      
+        <div class="question answer">
+      
+
+        <p><a href="https://github.com/kennethreitz/requests/blob/775b6f6f0098ffa9edd3874b1af4b98378377211/requests/packages/urllib3/poolmanager.py#L18" rel="noreferrer"> packages / urllib3>a pool / urllib3/ в значительной степени объясняет это. Запросы не поддерживают локальный URL.</p>
+<pre><code>pool_classes_by_scheme = {                                                        
+    'http': HTTPConnectionPool,                                                   
+    'https': HTTPSConnectionPool,                                              
+}                                                                                 
+</code></pre>
+
+        <div class="info">
+          <div class="votes">
+            <span class="arrow arrow-up"></span>
+            <span class="value">9</span>
+            <span class="arrow arrow-down"></span>
+          </div>
+          <div class="misc">
+            <span class="author">Piotr Dobrogost</span>
+            <span class="time">12 Апр 2012 в 14:06</span>
+          </div>
+        </div>
+      </div>
+
+      
+    
+      
+        <div class="question answer">
+      
+
+        <p>Вот транспортный адаптер, который я написал, который более полезен, чем b1r3k, и не имеет никаких дополнительных зависимостей, кроме самих запросов. Я еще не проверил это полностью, но то, что я попробовал, похоже, не содержит ошибок.</p>
+<pre><code>import requests
+import os, sys
+
+if sys.version_info.major &lt; 3:
+    from urllib import url2pathname
+else:
+    from urllib.request import url2pathname
+
+class LocalFileAdapter(requests.adapters.BaseAdapter):
+    """Protocol Adapter to allow Requests to GET file:// URLs
+
+    @todo: Properly handle non-empty hostname portions.
+    """
+
+    @staticmethod
+    def _chkpath(method, path):
+        """Return an HTTP status for the given filesystem path."""
+        if method.lower() in ('put', 'delete'):
+            return 501, "Not Implemented"  # TODO
+        elif method.lower() not in ('get', 'head'):
+            return 405, "Method Not Allowed"
+        elif os.path.isdir(path):
+            return 400, "Path Not A File"
+        elif not os.path.isfile(path):
+            return 404, "File Not Found"
+        elif not os.access(path, os.R_OK):
+            return 403, "Access Denied"
+        else:
+            return 200, "OK"
+
+    def send(self, req, **kwargs):  # pylint: disable=unused-argument
+        """Return the file specified by the given request
+
+        @type req: C{PreparedRequest}
+        @todo: Should I bother filling `response.headers` and processing
+               If-Modified-Since and friends using `os.stat`?
+        """
+        path = os.path.normcase(os.path.normpath(url2pathname(req.path_url)))
+        response = requests.Response()
+
+        response.status_code, response.reason = self._chkpath(req.method, path)
+        if response.status_code == 200 and req.method.lower() != 'head':
+            try:
+                response.raw = open(path, 'rb')
+            except (OSError, IOError) as err:
+                response.status_code = 500
+                response.reason = str(err)
+
+        if isinstance(req.url, bytes):
+            response.url = req.url.decode('utf-8')
+        else:
+            response.url = req.url
+
+        response.request = req
+        response.connection = self
+
+        return response
+
+    def close(self):
+        pass
+</code></pre>
+<p>(Несмотря на название, оно было полностью написано до того, как я решил проверить Google, поэтому оно не имеет ничего общего с b1r3k.) Как и в случае с другим ответом, добавьте следующее:</p>
+<pre><code>requests_session = requests.session()
+requests_session.mount('file://', LocalFileAdapter())
+r = requests_session.get('file:///path/to/your/file')
+</code></pre>
+
+        <div class="info">
+          <div class="votes">
+            <span class="arrow arrow-up"></span>
+            <span class="value">14</span>
+            <span class="arrow arrow-down"></span>
+          </div>
+          <div class="misc">
+            <span class="author">ssokolow</span>
+            <span class="time">8 Авг 2017 в 22:44</span>
+          </div>
+        </div>
+      </div>
+
+      
+    
+
+
+  
+  
+    <div class="matched-content">
+      <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-format="autorelaxed"
+           data-ad-client="ca-pub-6208177446512190"
+           data-ad-slot="2200666435"></ins>
+      <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  
+
+  
+
+          </div>
+
+          <div class="sidebar">
+            
+  
+    
+      <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+      <!-- Square2 -->
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:300px;height:250px"
+           data-ad-client="ca-pub-6208177446512190"
+           data-ad-slot="6253843236"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      
+      <!-- Yandex.RTB R-A-604623-2 -->
+      <!-- <div style="margin-bottom: 20px;">
+        <div id="yandex_rtb_R-A-604623-2"></div>
+        <script type="text/javascript">
+            (function(w, d, n, s, t) {
+                w[n] = w[n] || [];
+                w[n].push(function() {
+                    Ya.Context.AdvManager.render({
+                        blockId: "R-A-604623-2",
+                        renderTo: "yandex_rtb_R-A-604623-2",
+                        async: true
+                    });
+                });
+                t = d.getElementsByTagName("script")[0];
+                s = d.createElement("script");
+                s.type = "text/javascript";
+                s.src = "//an.yandex.ru/system/context.js";
+                s.async = true;
+                t.parentNode.insertBefore(s, t);
+            })(this, this.document, "yandexContextAsyncCallbacks");
+        </script>
+      </div> -->
+    
+  
+
+  
+    <h2>Похожие вопросы</h2>
+    <div class="links-list">
+  
+    <div class="item">
+      
+        <span class="title-comments">20<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/91057/kak-mne-zagruzit-fajl-cherez-http-ispolzuja-python">Как мне загрузить файл через HTTP, используя Python?</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">14<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/89972/kak-mne-skopirovat-fajl-v-python">Как мне скопировать файл в Python?</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">21<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/87755/izvlechenie-rasshirenija-iz-imeni-fajla-v-python">Извлечение расширения из имени файла в Python</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">9<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/1499062/esli-python-interpretiruetsja-chto-takoe-fajly-pyc">Если Python интерпретируется, что такое файлы .pyc?</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">12<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/87065/kak-vy-dobavljaete-fajl-v-python">Как вы добавляете файл в Python?</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">5<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/102052/opublikovat-json-s-ispolzovaniem-zaprosov-python">Опубликовать JSON с использованием запросов Python</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">24<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/1406005/zaprosy-s-perekrestnym-proishozhdeniem-podderzhivajutsja-tolko-dlja-http-oshibka-pri-zagruzke-lokalnogo-fajla">«Запросы с перекрестным происхождением поддерживаются только для HTTP».  ошибка при загрузке локального файла</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">11<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/86784/kak-udalit-kljuch-iz-slovarja-python">Как удалить ключ из словаря Python?</a>
+    </div>
+  
+</div>
+  
+
+  
+
+
+  
+
+  
+
+
+  
+    <div class="dobanner-container">
+      <div class="dobanner-wrapper">
+        💵 <a href="https://m.do.co/c/200057cae62c" target='_blank' rel="nofollow" class="dobanner">Получи $100 на хостинг на 60 дней. <br>Регистрируйся!</a>
+      </div>
+    </div>
+  
+
+
+  
+    <h2>Новые вопросы</h2>
+    
+    <div class="links-list">
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4283392/poluchenie-obschego-kolichestva-sekund-iz-obekta-datetimetime">Получение общего количества секунд из объекта datetime.time</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4640822/kak-izbezhat-povtorenija-zagolovka-stolbtsa-v-kadre-dannyh-pandas-kogda-tsikl-forloop-pomeschaetsja-vnutri-tsikla-while-v-python">Как избежать повторения заголовка столбца в кадре данных pandas, когда цикл forloop помещается внутри цикла while в Python</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4641416/razdelenie-stroki-pri-pervom-pojavlenii-ljubogo-iz-neskolkih-razdelitelej">Разделение строки при первом появлении любого из нескольких разделителей</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4640272/numpy-poelementno-vozvodit-v-stepen-kazhdoe-znachenie-matritsy-a-znachenijami-v-matritse-b">Numpy поэлементно возводить в степень каждое значение матрицы A значениями в матрице B</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4641031/kak-povtorit-rasshirit-frejm-dannyh-pandas">Как повторить / расширить фрейм данных pandas?</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4640517/kak-my-mozhem-dobavit-vhodnye-dannye-v-tsikl-a-zatem-raspechatat-eti-vhodnye-dannye-v-drugom-vlozhennom-tsikle">Как мы можем добавить входные данные в цикл, а затем распечатать эти входные данные в другом вложенном цикле?</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">6<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4638985/kak-sozdat-podspiski-iz-spiska-na-osnove-nachalnyh-i-konechnyh-elementov">Как создать подсписки из списка на основе начальных и конечных элементов?</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">4<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4639472/udalenie-povtorjajuschihsja-elementov-iz-spiska-v-python">Удаление повторяющихся элементов из списка в Python</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4639446/skazhite-csv-chtoby-ne-otdeljat-metku-vremeni-v-stroke-csv">Скажите csv, чтобы не отделять метку времени в строке csv</a>
+    </div>
+  
+    <div class="item">
+      
+        <span class="title-comments">3<!-- <i class="icon-comments"></i> --></span>
+      
+      <a href="/questions/4640361/preobrazovat-spisok-s-vlozhennym-slovarem-v-slovar">Преобразовать список с вложенным словарем в словарь</a>
+    </div>
+  
+</div>
+
+    <div class="links-list">
+      
+        <a href="/tags/python" class="link-more">Все вопросы по теме python > </a>
+      
+    </div>
+  
+
+
+  
+
+  
+  <h2>python</h2>
+  <div class='tag_description'>
+    <p>Python - это многопарадигмальный, динамически типизированный, многоцелевой язык программирования.  Он разработан для быстрого изучения, понимания и использования, а также для обеспечения чистого и единообразного синтаксиса.  Обратите внимание, что Python 2 официально не поддерживается с 01.01.2020.  Тем не менее, для вопросов о Python, связанных с версией, добавьте тег [python-2.7] или [python-3.x].  При использовании варианта Python (например, Jython, PyPy) или библиотеки (например, Pandas и NumPy) включите его в теги.</p>
+    <p style="text-align: right;">
+      
+          <a href="/tags/python/info">Подробнее про python...</a>
+      
+    </p>
+  </div>
+  
+
+  
+    <!-- Yandex.RTB R-A-604623-3 -->
+    <div id="yandex_rtb_R-A-604623-3"></div>
+    <script type="text/javascript">
+        (function(w, d, n, s, t) {
+            w[n] = w[n] || [];
+            w[n].push(function() {
+                Ya.Context.AdvManager.render({
+                    blockId: "R-A-604623-3",
+                    renderTo: "yandex_rtb_R-A-604623-3",
+                    async: true
+                });
+            });
+            t = d.getElementsByTagName("script")[0];
+            s = d.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//an.yandex.ru/system/context.js";
+            s.async = true;
+            t.parentNode.insertBefore(s, t);
+        })(this, this.document, "yandexContextAsyncCallbacks");
+    </script>
+  
+
+  
+    <!-- <h2>Популярные темы вопросов</h2> -->
+    
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <style>
+    .hljs{display:block;overflow-x:auto;background:#eff0f1;color:black}.xml .hljs-meta{color:#c0c0c0}.hljs-comment,.hljs-quote{color:#007400}.hljs-tag,.hljs-attribute,.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-name{color:#aa0d91}.hljs-variable,.hljs-template-variable{color:#3F6E74}.hljs-code,.hljs-string,.hljs-meta-string{color:#c41a16}.hljs-regexp,.hljs-link{color:#0E0EFF}.hljs-title,.hljs-symbol,.hljs-bullet,.hljs-number{color:#1c00cf}.hljs-section,.hljs-meta{color:#643820}.hljs-class .hljs-title,.hljs-type,.hljs-built_in,.hljs-builtin-name,.hljs-params{color:#5c2699}.hljs-attr{color:#836C28}.hljs-subst{color:#000}.hljs-formula{background-color:#eee;font-style:italic}.hljs-addition{background-color:#baeeba}.hljs-deletion{background-color:#ffc8bd}.hljs-selector-id,.hljs-selector-class{color:#9b703f}.hljs-doctag,.hljs-strong{font-weight:bold}.hljs-emphasis{font-style:italic}
+</style>
+<script src="/static/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    <div class="horizontal-block footer">
+      <div class="main-container flex">
+
+        <div class="footer-content">
+          <div class="horizontal-wrapper">
+            <div class="site-name">
+              <a href="/">Question-It.com</a>
+            </div>
+            <!-- <div class="lang-icons">
+              <a href="/"><img src="/static/img/icon_flag_russia.png" alt="На русском" title="На русском"></a>
+              <a href="/es"><img src="/static/img/icon_flag_spain.png" alt="En español" title="En español"></a>
+              <a href="/fr"><img src="/static/img/icon_flag_france.png" alt="En français" title="En français"></a>
+              <a href="/de"><img src="/static/img/icon_flag_germany.png" alt="Auf Deutsch" title="Auf Deutsch"></a>
+            </div> -->
+          </div>
+
+          <style>
+            .main-container.flex {
+              display: flex;
+              justify-content: space-between;
+            }
+            .footer {
+              margin-top: 30px;
+            }
+            .footer-block {
+              margin-bottom: 20px;
+              margin-right: 60px;
+            }
+            .footer-block.parent {
+              margin-right: 0px;
+              margin-left: 60px;
+            }
+            .footer-block.parent:first-child {
+              margin-left: 0;
+            }
+            .footer-block.child {
+              margin-left: 20px;
+              margin-right: 0;
+            }
+            .footer-block .footer-block-title {
+              font-size: 17px;
+              line-height: 30px;
+              margin-bottom: 10px;
+              color: #fff;
+            }
+            .footer-block a {
+              font-size: 14px;
+              display: block;
+              color: #fff;
+              text-decoration: none;
+              margin-bottom: 10px;
+            }
+            .footer-block a:hover {
+              text-decoration: underline;
+            }
+
+            .horizontal-wrapper2 {
+              margin-top: 10px;
+              display: flex;
+              justify-content: flex-start;
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+
+            @media only screen and (max-width: 450px) {
+              .footer {
+                margin-top: 0px;
+              }
+              .horizontal-wrapper2 {
+                justify-content: space-between;
+                flex-direction: column;
+              }
+              .main-container.flex {
+                flex-direction: column;
+              }
+              .footer-block {
+                margin-right: 0px;
+              }
+            }
+
+
+          </style>
+          <div class="horizontal-wrapper2">
+            <div class="footer-block parent">
+              
+                <div class="footer-block-title">Языки</div>
+              
+              <div class="footer-block-content">
+                <a href="/tags/javascript">JavaScript</a>
+                <a href="/tags/html">HTML</a>
+                <a href="/tags/css">CSS</a>
+                <a href="/tags/php">PHP</a>
+                <a href="/tags/python">Python</a>
+                <a href="/tags/sql">SQL</a>
+              </div>
+            </div>
+
+            <div class="footer-block child">
+              <div class="footer-block-title">&nbsp;</div>
+              <div class="footer-block-content">
+                <a href="/tags/java">Java</a>
+                <a href="/tags/c">C</a>
+                <a href="/tags/c%23">C#</a>
+                <a href="/tags/c++">C++</a>
+                <a href="/tags/r">R</a>  
+                <a href="/tags/swift">Swift</a>  
+                
+              </div>
+            </div>
+
+            <div class="footer-block parent">
+              
+                <div class="footer-block-title">Библиотеки</div>
+              
+              <div class="footer-block-content">
+                <a href="/tags/pandas">Pandas</a>
+                <a href="/tags/reactjs">React</a>
+                <a href="/tags/jquery">jQuery</a>
+                <a href="/tags/angular">Angular</a>
+                <a href="/tags/numpy">Numpy</a>
+                <a href="/tags/vue.js">Vue.js</a>
+              </div>
+            </div>
+
+            <div class="footer-block child">
+              <div class="footer-block-title">&nbsp;</div>
+              <div class="footer-block-content">
+                <a href="/tags/react-native">React native</a>
+                <a href="/tags/tensorflow">TensorFlow</a>
+                <a href="/tags/matplotlib">Matplotlib</a>
+                <a href="/tags/bootstrap-4">Bootstrap</a>
+                <a href="/tags/keras">Keras</a>
+                <a href="/tags/opencv">OpenCV</a>
+              </div>
+            </div>
+
+            <div class="footer-block parent">
+              
+                <div class="footer-block-title">Фреймворки</div>
+              
+              <div class="footer-block-content">
+                <a href="/tags/django">Django</a>
+                <a href="/tags/laravel">Laravel</a>
+                <a href="/tags/selenium">Selenium</a>
+                <a href="/tags/flask">Flask</a>
+                <a href="/tags/flutter">Flutter</a>
+                <a href="/tags/docker">Docker</a>
+              </div>
+            </div>
+
+            <div class="footer-block parent">
+              
+                <div class="footer-block-title">Мобайл</div>
+              
+              <div class="footer-block-content">
+                <a href="/tags/android">Android</a>
+                <a href="/tags/ios">iOS</a>
+                <a href="/tags/android-studio">Android Studio</a>
+                <a href="/tags/dart">Dart</a>
+                <a href="/tags/ionic-framework">Ionic</a>
+                <a href="/tags/cordova">Apache Cordova</a>
+              </div>
+            </div>
+          </div>
+          
+            <div class="horizontal-wrapper" style="margin-bottom: 20px;">
+              
+                <a href="https://webmonkez.com/questions/1421007/obtener-un-archivo-de-una-url-local-con-solicitudes-de-python" style="line-height: 20px; text-decoration: none; color: #fff">
+                  <img src='/static/img/spain.png' style="height:20px;  vertical-align: middle;"> En Español
+                </a>
+              
+
+              <a href="/tutorial/python" style="line-height: 20px; text-decoration: none; color: #fff">Самоучитель Python</a>
+            </div>
+          
+        </div>
+        <div class="footer-ad" style="width: 300px; height: 250px; margin-top: 20px; margin-bottom: 20px;">
+          
+            <!-- Yandex.RTB R-A-604623-7 -->
+            <div id="yandex_rtb_R-A-604623-7"></div>
+            <script type="text/javascript">
+                (function(w, d, n, s, t) {
+                    w[n] = w[n] || [];
+                    w[n].push(function() {
+                        Ya.Context.AdvManager.render({
+                            blockId: "R-A-604623-7",
+                            renderTo: "yandex_rtb_R-A-604623-7",
+                            async: true
+                        });
+                    });
+                    t = d.getElementsByTagName("script")[0];
+                    s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "//an.yandex.ru/system/context.js";
+                    s.async = true;
+                    t.parentNode.insertBefore(s, t);
+                })(this, this.document, "yandexContextAsyncCallbacks");
+            </script>
+          
+        </div>
+
+      </div>
+    </div>
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156029426-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-156029426-1');
+      </script>
+
+      <!-- Yandex.Metrika counter --> 
+      <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(60952108, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/60952108" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    
+
+  </body>
+</html>
